@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- font Bodoni -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
+
+<!-- title of the website -->
+	<title>photo monologue: a modern reflection</title>
+	
+	<style>
+/*the title page container (backrgound image, title, and subtitle)*/
+	.title-page {
+	position: relative;
+	text-align: center;
+	}
+
+/*to place text over image, use position: absolute and adjust top/left percentage*/
+/*use number*vw so that the font size changes according to the size of browser*/
+	.title {
+	position: absolute;
+ 	top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	font-size: 8vw;
+	line-height: 1.6;
+	color: white;
+	}
+
+/*white-space:nonwrap can prevent the text from changing lines*/
+	.subtitle {
+	font-family: Bodoni Moda, serif;
+	position: absolute;
+ 	top: 30%;
+  left: 50%;
+  transform: translate(-50%, 62%);
+	font-size: 2vw;
+	color: white;
+/*	white-space: nowrap;*/
+	}
+	
+/*style of monologue-one-grid: leftText, image, rightText*/
+	.monologue-one-grid {
+	margin-top:150px;
+	display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5px;
+  row-gap: 100px;
+	}
+
+/*style of monologue-two-grid: (first line)image, (second line)leftText, rightText*/
+	.monologue-two-grid {
+	display: grid;
+	row-gap: 40px;
+	margin-top:80px;
+	margin-left: 20px;
+	margin-right: 20px;
+	column-gap: 5px;
+	}
+
+/*this text-grid is for the second line of monologue-two-grid*/
+	.text-grid {
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+  column-gap: 40px; /* gap between leftText and rightText*/
+  margin-bottom: 200px;
+	}
+
+/*img container1: style of 2 images in a colomn in monologue-one-grid*/
+	.img1 {
+/*one image blocks the whole line*/
+	 display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+	}
+
+/*img container2: style of 2 images in a row in monologue-one-grid*/
+	.img2 {
+	display: flex;
+	gap: 5px; /* gap between the two images */
+	justify-content: center; /* center images horizontally */
+	margin-top: 120px;
+	margin-bottom:120px;
+	}
+
+/*img container3: style of 3 images in a row in monologue-two-grid*/
+	.img3 {
+	margin-top:200px;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	}
+
+/*size of images in a column in monologue-one-grid*/
+	.img {
+	width:500px;
+	margin: 0;
+	}
+
+/*size of images in a row in monologue-one-grid*/
+	.img-small{
+	width:300px;
+	}
+
+/*size of images in monologue-two-grid*/
+	.img-medium {
+	width: 480px;
+	}
+
+
+	.leftText{
+	text-align: center; /* center text vertically */
+	align-self: center; /* center text horizontally */
+	margin-left: 20%;
+	margin-right: 20px;
+	font-family: Bodoni Moda, serif;
+	font-size: 20px;
+	}
+
+	 .rightText {
+	text-align: center; 
+	align-self: center;
+	margin-left: 5px;
+	margin-right: 20%;
+	font-size: 20px;
+	 }
+
+	 .sign {
+	 	font-family: Bodoni Moda, serif;
+	 	text-align: center; /* center text vertically */
+	 }
+
+	</style>
+	
+</head>
+
+<body>
+<div class="title-page">
+<!-- adjust the opacity of the background image -->
+<img  src="pic/laundry2.JPG" style="width:100%; opacity: 0.8">
+ <p class="title">photo monologue</p>
+ <p class="subtitle">a modern reflection on Virginia Woolf's<br><span style="font-style: italic"> a room of one's own</span></p>
+</div>
+
+
+ <div class="monologue-one-grid">
+ 	<div class="leftText">
+ 	<p class="text">Call me Mary Beton, Mary Seton, Mary Carmichael or any other name you please—it is not a matter of importance.<br>——Virginia Woolf</p>
+ 	</div>
+ 	<div class="img1">
+	<img class="img" src="pic/sunglass1.JPG"/>
+	<img class="img" src="pic/sunglass2.JPG"/>
+	</div>
+	<div class="rightText">
+	<p class="text">Adress me as she, they, ze or any other pronoun you please (maybe not he)—I don’t care.</p>
+	</div>
+ </div>
+
+
+ <div class="monologue-one-grid">
+ 	<div class="leftText">
+ 	<p class="text">A woman must have money and a room of her own if she is to write fiction.<br>——Virginia Woolf</p>
+ 	</div>
+ 	<div class="img1">
+	<img class="img" src="pic/receipt1.JPG"/>
+	<img class="img" src="pic/receipt2.JPG"/>
+	</div>
+	<div class="rightText">
+	<p class="text">I have a room of my own (shared by my roommate), not much money…</p>
+	</div>
+ </div>
+
+ <div class="monologue-one-grid">
+ 	<div class="leftText">
+ 	<p class="text">Lock up your libraries if you like; but there is no gate, no lock, no bolt that you can set upon the freedom of my mind.<br>——Virginia Woolf</p>
+ 	</div>
+	<div class="img1">
+	<img class="img" src="pic/toy1.JPG"/>
+	<img class="img" src="pic/toy2.JPG"/>
+	</div>
+	<div class="rightText">
+	<p class="text">My room is my playground 🛝 so is the world 🌎</p>
+	</div>
+ </div>
+
+
+ <div class="monologue-one-grid">
+ 	<div class="leftText">
+ 	<p class="text">[Woman’s] sensibility had been educated for centuries by the influences of the common sitting room. People’s feelings were impressed on her; personal relations were always before her eyes.<br>——Virginia Woolf</p>
+ 	</div>
+ 	<div class="img2">
+	<img class="img-small" src="pic/mirror1.JPG"/>
+	<img class="img-small" src="pic/mirror2.JPG"/>
+	</div>
+	<div class="rightText">
+	<p class="text">Now that I’m allowed to be alone (I have never been a people person anyway), I can finally…Wait, I can’t see myself clearly.</p>
+	</div>
+ </div>
+
+
+  <div class="monologue-one-grid">
+ 	<div class="leftText">
+ 	<p class="text">So long as you write what you wish to write, that is all that matters; and whether it matters for ages or only for hours, nobody can say.<br>——Virginia Woolf</p>
+ 	</div>
+ 	<div class="img1">
+	<img class="img" src="pic/computer1.JPG"/>
+	<img class="img" src="pic/computer2.JPG"/>
+	</div>
+	<div class="rightText">
+	<p class="text">It matters when I have an assignment due tomorrow, and I really want to write what I wish to write.</p>
+	</div>
+ </div>
+
+
+ <div class="monologue-two-grid">
+ 	<div class="img3">
+	<img class="img-medium" src="pic/laundry1.JPG"/>
+	<img class="img-medium" src="pic/laundry2.JPG"/>
+	<img class="img-medium" src="pic/laundry3.JPG"/>
+	</div>
+	<div class="text-grid">
+ 	<div class="leftText">
+ 	<p class="text">One must strain off what was personal and accidental in all these impressions and so reach the pure fluid, the essential oil of truth.<br>——Virginia Woolf</p>
+ 	</div>
+ 	
+	<div class="rightText">
+	<p class="text">I gotta clean up myself. Thoroughly. Till I find the truth so that everyone can remember my name.</p>
+	</div>
+	</div>
+ </div>
+
+
+   <div class="monologue-one-grid">
+ 	<div class="leftText">
+ 	<p class="text">Imaginatively she is of the highest importance; practically she is completely insignificant.<br>——Virginia Woolf</p>
+ 	</div>
+ 	<div class="img1">
+	<img class="img" src="pic/walk1.gif"/>
+
+	</div>
+	<div class="rightText">
+	<p class="text">Imaginatively I am political correctness; in my room, I'm just myself.</p>
+	</div>
+ </div>
+ 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<p class="sign">chanel feng</p>
+
+</body>
+</html>

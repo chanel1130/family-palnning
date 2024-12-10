@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tableau Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <div class="title-page">
+      
+       <p class="title">Behind Family Planning Policies</p>
+       <p class="subtitle">A data visualization project:<br><span style="font-style: italic">looking at China's one-child policy</span><br><span style="font-style: italic">in a broader sense</span></p>
+       <img  src="pic/one is the best.jpg" style="width:15%; opacity: 1">
+      </div>
+
+
+    <p class="introduction">
+      Family planning is the practice of controlling the number of children in a family and the intervals between their births, particularly using artificial contraception or voluntary sterilization. The development of different birth control methods can be traced to the beginning of human civilization. At the same time, population planning on a national level has only existed for a few decades since the mid-20th century. The Planned Parenthood Federation of America, founded by Margaret Sanger in 1942, marked the beginning of the journey. About 20 years later, the first UN-organized World Population Conference (1974) was held in Bucharest to call for active national actions.<br><br>
+Witnessing rapid population growth, a potential hindrance to economic development, and a risk to political stability, more countries began to seek a way to better plan their populations and provide their people with accessible contraceptives. Among these, China’s family planning policies have long been seen as one of the most prominent and extreme, with its One-Child Policy issued in 1979 which restricted many families to a single child. <span style="background-color: rgba(246, 255, 0, 0.498); ">Meanwhile, it has been oftentimes praised or criticized as a single historical event instead of being placed in a larger context, and many misinterpretations have been left unattained since the lift of the policy in 2016.</span><br><br>
+What if we see it in a bigger picture? In the chart below, 9 other countries (<span style="font-weight: 600;">Albania, Brazil, India, Indonesia, Mexico, South Korea, Thailand, Turkey, and Vietnam</span>) are selected for comparison purposes. These countries were chosen because they resembled China in terms of population, birth rate, economic development, and cultural norms more compared to other countries, making them better comparison objects. By visualizing the trends of birth rate, sex ratio at birth, and fertility rate of the 10 countries in 55 years, we would gain a better understanding of the One-Child Policy, including thinking about its necessity, influences, and potential alternatives.
+
+    </p>
+
+
+
+
+    <p class="tableauTitle">Family Planning Track of 10 Countries (1970-2025)</p>
+    <p class="tableauSubTitle">Data from <a href="https://population.un.org/wpp2019/DataQuery/">United Nations Department of Economic and Social Affairs: Population Dynamics</a></p>
+    <div class="container">  
+    <div class='tableauPlaceholder' id='viz1733357822688' style='position: relative' >
+      <noscript>
+        <a href='#'>
+        <img alt=' 1970 - 1975 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fa&#47;FamilyPlanning_17333561043820&#47;Sheet1&#47;1_rss.png' style='border: none' />
+        </a>
+    </noscript>
+    <object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+      <param name='embed_code_version' value='3' /> 
+      <param name='site_root' value='' />
+      <param name='name' value='FamilyPlanning_17333561043820&#47;Sheet1' />
+      <param name='tabs' value='no' />
+      <param name='toolbar' value='yes' />
+      <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fa&#47;FamilyPlanning_17333561043820&#47;Sheet1&#47;1.png' /> 
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+      <param name='language' value='en-US' />
+    </object>
+  </div>                
+    
+    <script type='text/javascript'>                    
+    var divElement = document.getElementById('viz1733357822688');                   
+     var vizElement = divElement.getElementsByTagName('object')[0];                    
+     vizElement.style.width='90%';vizElement.style.height=(divElement.offsetWidth*0.55)+'px';                    var scriptElement = document.createElement('script');                    
+     scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+     vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+    </script>
+   </div>
+
+   <div class="annotation">
+    <div class="singleAnnotationContainer">
+      <div class="upperPart">
+        <div class="icon">
+          <img src="icons/birth rate.png">
+        </div>
+        <p class="annotationTitle">Birth rate</p>
+      </div>
+      <div class="lowerPart">
+        <p class="explanation">The birth rate is the number of live births per thousand of population per year. </p>
+      </div>
+    </div>
+
+    <div class="singleAnnotationContainer">
+      <div class="upperPart">
+        <div class="icon">
+          <img src="icons/sex ratio.png">
+        </div>
+        <p class="annotationTitle">Sex ratio</p>
+      </div>
+      <div class="lowerPart">
+        <p class="explanation">In this chart, the sex ratio represents the sex ratio at birth, meaning the ratio of female to male births.
+          <br>Through time and across the world, the natural sex raio can often vary, between 103 to 107 male births per 100 female births. </p>
+      </div>
+    </div>
+
+    <div class="singleAnnotationContainer">
+      <div class="upperPart">
+        <div class="icon">
+          <img src="icons/fertility.png">
+        </div>
+        <p class="annotationTitle">Fertility rate</p>
+      </div>
+      <div class="lowerPart">
+        <p class="explanation">Here the fertility rate represents total fertility rate (TFR), which is the average number of children a woman would have if she lived to the end of her childbearing years </p>
+      </div>
+    </div>
+   </div>
+
+
+   
+   <p class="introduction">
+    An evident trend shown in the chart is that there has been a rapid decrease in the birth rate and fertility rate in the past decades, and there was an increase in the sex ratio among some countries at the beginning of the 21st century. So what are the driving factors? How much of a role have family planning policies been playing in it? If the trend is universally experienced across similar developing countries, what is special about China’s One-Child Policy? Whether it was a necessary policy and what we could learn from it will be discussed accordingly. <br><br>Starting with a comparison between China and India and their different policies as the two most populated countries in the world, we will move on to examine the overall trend among the ten countries. Influences of the One-Child Policy have been reported in an overwhelmingly negative way, and is it possible that China was singled out in the discussion? The visualized data may give a better explanation. In the end, we will focus on what happened after the lift of the policy in recent years and a common low birth rate among countries.
+  </p>
+
+   <a href="china_india.html" div class="thumbnail">
+    <div class="leftImg">
+      <img src="pic/india.jpg" style="width:100%">
+    </div>
+    <div class="rightText">
+        <p class="thumbnailTitle">China and India: Similar huge populations, different policies</p>
+      <p class="thumbnailText">The first national population policy was adopted by India in 1952, which promoted contraceptive services within clinics, including condom handouts and both female and male sterilizations. It wasn’t until then Prime Minister Indira Gandhi proclaimed a > </p>
+    </div>
+  </a>
+   <!-- </div> -->
+
+   <a href="fertility.html" div class="thumbnail">
+    <div class="leftImg">
+      <img src="pic/family planning.jpg" style="width:100%">
+    </div>
+    <div class="rightText">
+        <p class="thumbnailTitle">Was one-child policy a necessary policy?
+          Decrease in fertility as a global trend
+          </p>
+      <p class="thumbnailText">A rapid decrease in fertility has become a trend in most developing countries in the late 20th century. The first UN-organized World Population Conference (1974) in Bucharest raised the slogan “development is the best contraceptive”, which turned out to be a >  </p>
+    </div>
+  </a>
+
+  <a href="sex_ratio.html" div class="thumbnail">
+    <div class="leftImg">
+      <img src="pic/daughter.png" style="width:100%">
+    </div>
+    <div class="rightText">
+        <p class="thumbnailTitle">“They killed female babies!” 
+          ——The truth behind the unbalanced sex ratio
+          </p>
+      <p class="thumbnailText">Over the years, one of the most negative impacts of the One-Child Policy criticized by the international society was an imbalanced sex ratio at birth. There’s no denying that the number of selective abortions and infanticide increased after the policy was > </p>
+    </div>
+  </a>
+
+  <a href="birth_rate.html" div class="thumbnail">
+    <div class="leftImg">
+      <img src="pic/4b.jpg" style="width:100%">
+    </div>
+    <div class="rightText">
+        <p class="thumbnailTitle">Today:
+          Low birth rate in the 21st century          
+          </p>
+      <p class="thumbnailText">In recent years, China has shifted from the One-Child Policy to the Two-Child Policy in 2016 and the Three-Child Policy in 2021. However, like many countries in the world, the birth rate in China continues to go down, even with the relief in policies > </p>
+    </div>
+  </a>
+
+  <br><br>
+  <div class="reference">
+    <p class="referenceTitle">Reference</p>
+    <p class="referenceList">
+      <a href="https://www.jstor.org/stable/23655290">
+        Population, Policy, and Politics: How Will History Judge China's One-Child Policy?
+      </a>
+       Wang Feng, Yong Cai, Baochang Gu<br><br>
+      <a href="https://jayscholar.etown.edu/cgi/viewcontent.cgi?article=1002&context=socwrkstu">
+        Cross-Cultural Comparative Analysis of Family Planning Policy within India and China
+      </a>
+       Kayla W. Siviy <br><br>
+       <a href="https://www.jstor.org/stable/24941726?seq=2">
+      The Fertility Decline in Developing Countries
+       </a>
+       Bryant Robey, Shea O. Rutstein and Leo Morris<br><br>
+       <a href="https://www.aeaweb.org/articles?id=10.1257/jep.31.1.141">
+        The Evolution of China’s One-Child Policy and Its Effects on Family Outcomes
+       </a>
+       Junsen Zhang <br><br>
+       <a href="https://zgrkkx.ajcass.com/Admin/Upload/FileDownload/?ContentID=33165&fileName=%E4%B8%AD%E5%9B%BD%E5%A9%B4%E5%84%BF%E5%87%BA%E7%94%9F%E6%80%A7%E5%88%AB%E6%AF%94%E7%BB%BC%E8%AE%BA">
+        中国婴儿出生性别比综论
+       </a>
+       顾宝昌 徐 毅<br><br>
+       <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9623034/#:~:text=Over%20the%20past%2020%20years,they%20decreased%20by%20approximately%2073%25.">
+        Birth Rate Transition in the Republic of Korea: Trends and Prospects
+       </a>
+       Jungha Yun, Chae Young Kim, Se-Hyung Son, Chong-Woo Bae, Yong-Sung Choi, Sung-Hoon Chung
+    </p>
+    <br><br><br><br><br><br><br><br>
+  </div>
+
+  </body>
+  
+</html>

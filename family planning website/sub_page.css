@@ -1,0 +1,70 @@
+p {
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+.textContainer{
+  max-width: 875px;
+  margin:0 auto;
+  margin-top: 100px;
+	display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5px;
+  row-gap: 100px;
+  padding:20px;
+  /* outline: 1px solid rgb(0, 0, 0); */
+  margin-bottom: 150px;
+  /* box-shadow: 10px 10px 5px lightgray; */
+  /* border-radius: 25px; */
+}
+
+.titleContainer {
+  display: flex; /* 使用弹性布局 */
+  flex-direction: column; /* 垂直排列 */
+  align-items: flex-start; /* 子元素靠左对齐 */
+  gap: 0; 
+  padding: 0; 
+  /* outline: 1px solid rgb(255, 0, 0); */
+}
+
+.textTitle {
+  margin:0;
+  font-size: 50px;
+  /* outline: 1px solid rgb(0, 17, 255); */
+}
+
+.textSubTitle {
+  font-size:30px;
+  margin-top:70px;
+  color: lightgray;
+  /* outline: 1px solid rgb(0, 0, 0); */
+}
+
+.mainText {
+  font-size:20px;
+  padding-top:280px;
+  padding-left:20px;
+  line-height: 1.5;
+  /* outline: 1px solid rgb(0, 0, 0); */
+}
+
+.imgContainer {
+  max-width: 875px;
+  margin: 0 auto;
+  column-gap: 5px;
+  row-gap: 100px;
+  padding: 20px;
+  /* outline: 1px solid rgb(0, 0, 0); */
+  margin-bottom: 150px;
+}
+
+.img1 {
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  height: 100%; /* 可选，根据需要调整 */
+}
+.img1 img {
+  width:100%;
+  height: auto;
+}

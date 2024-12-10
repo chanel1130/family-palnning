@@ -1,0 +1,246 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll; 
+  position: relative;
+}
+
+
+p{
+  font-family: 'Times New Roman', Times, serif;
+
+}
+/* 让 p5.js 画布的层级较低并充满整个页面，但不覆盖内容 */
+canvas {
+  position: absolute;  /* 绝对定位，让画布相对于页面固定 */
+  top: -100px;
+  left: 0;
+  width: 100vw;  /* 画布占满整个视口 */
+  height: 100vh;  /* 画布占满整个视口 */
+  z-index: 1;  /* 画布位于页面底部 */
+}
+
+a.thumbnail {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease;
+}
+
+a.thumbnail:hover {
+  opacity: 0.9;
+  transform: translateY(5px);
+
+}
+.title-page {
+  z-index: 2; 
+	position: relative;
+	text-align: center;
+  font-family:'Times New Roman', Times, serif;
+  margin-bottom: 200px;
+  margin-top: 150px;
+	}
+
+/*to place text over image, use position: absolute and adjust top/left percentage*/
+/*use number*vw so that the font size changes according to the size of browser*/
+.title {
+	/* position: absolute; */
+  text-align: center;
+ 	/* top: 30%; */
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+	font-size: 4vw;
+  font-weight: 600;
+	line-height: 1.6;
+	color: black;
+	}
+
+/*white-space:nonwrap can prevent the text from changing lines*/
+	.subtitle {
+	/* position: absolute;
+ 	top: 30%;
+  left: 50%;
+  transform: translate(-50%, 62%); */
+	font-size: 1.5vw;
+	color: black;
+  margin-bottom: 100px;
+/*	white-space: nowrap;*/
+	}
+
+
+  .introduction {
+    font-size: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    column-gap: 5px;
+    row-gap: 100px;
+    padding: 20px;
+    /* outline: 1px solid rgb(0, 0, 0); */
+    margin-bottom: 150px;
+    line-height: 1.5;
+  }
+
+
+.container {
+  width:auto;
+  margin-left:200px;
+  margin-bottom: 50px;
+  background-color: white;
+  z-index: 3;  /* 确保其他内容位于画布之上 */
+  
+}
+
+.tableauTitle {
+  font-size:30px;
+  font-weight: 600;
+  text-align: left;
+  margin-left: 210px;
+  margin-bottom: 0;
+}
+
+.tableauSubTitle {
+  font-size:15px;
+  text-align: left;
+  margin-left: 210px;
+  margin-top:0;
+  margin-bottom: 0;
+}
+
+.tableauPlaceholder {
+  margin-top: 20px;
+  height: 600px; /* 设置Tableau可视化的高度 */
+}
+
+.annotation {
+  max-width: 1000px;
+  margin:0 auto;
+	display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* outline: 1px solid black; */
+  margin-bottom: 150px;
+  column-gap: 20px;
+}
+
+.singleAnnotationContainer {
+  /* outline: 1px solid black; */
+  display: flex; /* 使用弹性布局 */
+  flex-direction: column; /* 垂直排列 */
+  align-items: flex-start; /* 子元素靠左对齐 */
+  gap: 0; 
+  padding: 0; 
+  
+}
+
+.upperPart {
+  height:30px;
+  
+  display: flex; /* 使用 Flexbox 布局 */
+  align-items: flex-end; /* 垂直对齐到容器底部 */
+  justify-content:left; /* 在两侧均匀分布内容 */
+}
+
+.annotationTitle {
+  /* outline: 1px solid black; */
+  font-size: 25px;
+  margin:0;
+}
+
+.lowerPart {
+  padding-right: 20px;
+
+}
+
+
+.icon {
+  /* outline: 1px solid black; */
+  height:30px;
+  margin-right:10px;
+}
+.icon img {
+  height:100%;
+}
+
+
+
+
+.thumbnail{
+  max-width: 875px;
+  margin:0 auto;
+	display: grid;
+  grid-template-columns: 300px 1fr;
+  column-gap: 5px;
+  row-gap: 100px;
+  padding:20px;
+  outline: 1px solid lightgray;
+  margin-bottom: 150px;
+  /* box-shadow: 10px 10px 5px lightgray; */
+  border-radius: 25px;
+}
+.leftImg {
+  display: block;
+  margin-left: auto;
+  margin-right: 20px;
+
+}
+
+.rightText {
+  display: flex;
+  flex-direction: column; /* 纵向排列 */
+  justify-content: space-between; /* 上下两部分分布在两端 */
+  height: 100%; /* 或设置具体高度，比如 300px */
+  
+}
+.thumbnailTitle{
+  width:100%;
+  /* max-width: 550px; */
+  font-size: 30px;
+  font-weight: 600;
+  /* outline: 1px solid black; */
+  margin: auto;
+  margin-top:0;
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+
+.home-button {
+  position: fixed;  /* 固定在屏幕上的位置 */
+  top: 10px;        /* 距离顶部 10px */
+  left: 10px;       /* 距离左边 10px */
+  display: inline-block;
+  padding: 10px 20px;
+  margin:20px;
+  font-size: 16px;
+  font-weight:500;
+  color: rgb(119, 119, 119);
+  background-color: rgb(233, 233, 233); /* 按钮背景颜色 */
+  border: none;
+  border-radius: 20px; /* 圆角 */
+  text-decoration: none; /* 去掉下划线 */
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #2ea0ab; /* 鼠标悬停时按钮颜色 */
+  color:white;
+}
+
+.reference {
+  max-width: 875px; 
+  margin:0 auto;
+  height: 50vh;         
+  /* outline: 1px solid black; */
+}
+
+.referenceTitle {
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 600;
+  text-align: left;   
+
+}
+
+.referenceList {
+  font-size: 20px;
+  text-align: left;   
+}
