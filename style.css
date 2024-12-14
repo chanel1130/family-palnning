@@ -111,31 +111,20 @@ a.thumbnail:hover {
 }
 
 .annotation {
-  max-width: 1000px;
-  margin:0 auto;
-	display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  /* outline: 1px solid black; */
-  margin-bottom: 150px;
-  column-gap: 20px;
+  width: 80%; /* 设为容器宽度的 80% */
+  margin: 0 auto; /* 居中 */
+  display: flex; /* 让子元素水平排列 */
+  flex-wrap: wrap; /* 如果宽度不足，换行 */
+  gap: 20px; /* 子元素间的间距 */
 }
 
 .singleAnnotationContainer {
-  /* outline: 1px solid black; */
-  display: flex; /* 使用弹性布局 */
-  flex-direction: column; /* 垂直排列 */
-  align-items: flex-start; /* 子元素靠左对齐 */
-  gap: 0; 
-  padding: 0; 
-  
+  width: 30%; /* 每个注释占容器宽度的 30% */
+  box-sizing: border-box; /* 包括 padding 和 border 在内计算宽度 */
 }
 
-.upperPart {
-  height:30px;
-  
-  display: flex; /* 使用 Flexbox 布局 */
-  align-items: flex-end; /* 垂直对齐到容器底部 */
-  justify-content:left; /* 在两侧均匀分布内容 */
+.upperPart, .lowerPart {
+  padding: 10px;
 }
 
 .annotationTitle {
